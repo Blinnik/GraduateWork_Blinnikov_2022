@@ -54,5 +54,5 @@ You need to create a `config.json` file with the following structure:
 
 ## Thanks to
 
-+ **CodeLyon** - The structure of the bot was built on the basis of some of his videos
-+ **ADAMJR(https://www.youtube.com/c/ADAMJR)** - Web application of this project is based on his youtube guide **"Create a Discord Bot Dashboard"(https://www.youtube.com/watch?v=zwwsw2wvOB0&list=PLGfT2ttRbfizUIO1YEITWaquqBsNqHv7v)**
++ **[CodeLyon](https://www.youtube.com/c/CodeLyon)** - The structure of the bot was built on the basis of some of his videos
++ **[ADAMJR](https://www.youtube.com/c/ADAMJR)** - Web application of this project is based on his youtube guide **["Create a Discord Bot Dashboard"](https://www.youtube.com/watch?v=zwwsw2wvOB0&list=PLGfT2ttRbfizUIO1YEITWaquqBsNqHv7v)**
