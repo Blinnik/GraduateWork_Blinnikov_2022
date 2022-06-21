@@ -1,6 +1,21 @@
 # GraduateWork_Blinnikov_2022
 
-Discord bot data processing client-server application (Discord bot + Web application)
+Discord bot data processing client-server application (Discord bot + Web application).
+The foundation of the application was implemented, as well as the most necessary functions for the discord bot (demonstration of skills).
+
+## Functionality
+
+**Interaction via text chat:**
++ Play, skip and stop music
++ Reaction Roles system
++ Clear messages in the text chat
++ Ban, unban and kick user
++ Change prefix of the bot
++ Help menu
+
+**Interaction via dashboard of the web application:**
++ Change prefix of the bot
++ Send message to text channels
 
 ## Setup
 
@@ -43,14 +58,14 @@ You need to create a `config.json` file with the following structure:
 ```
 ### Don't forget to install all necessary packages
 
-> discord.js
-> mongoose
-> discord-player
-> body-parser
-> express
-> cookies
-> method-override
-> pug
++ discord.js
++ mongoose
++ discord-player
++ body-parser
++ express
++ cookies
++ method-override
++ pug
 
 ## Thanks to
 
