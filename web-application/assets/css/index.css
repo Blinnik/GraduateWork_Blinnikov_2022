@@ -1,0 +1,61 @@
+.jumbotron {
+    margin-top: 25vh;
+}
+.round {
+    border-radius: 50% !important;
+}
+.shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.user-avatar{
+    width: 32px;
+    height: 32px;
+}
+.user-name{
+    color:white;
+    transition: color .2s linear;
+}
+.user-name:hover{
+    color: rgba(255, 255, 255, 0.70)
+}
+.dropdown-menu {
+    min-width: 7rem;
+    width: 120px;
+}
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0.350rem;
+    margin-right: 0.650rem;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.a-bottom {
+    position: inherit;
+    bottom: 0;
+}
+
+
+
+.col {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .module {
+      padding-left: 34px;
+  }
+  .module-table {
+    flex-wrap: wrap;
+}
+.module-td {
+    flex-wrap: wrap;
+}

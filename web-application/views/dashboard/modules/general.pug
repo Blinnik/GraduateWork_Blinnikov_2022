@@ -1,0 +1,26 @@
+section#generalModule.module.container
+  
+  .p-5.mb-4.rounded-3.text-center
+    h1.display-4.text-center General
+  form(action='/servers/' + guild.id + '/general-prefix?_method=PUT', method='POST')
+    table
+      tr
+        td(valign='top')
+          label.mb-1 Prefix
+          input.form-control(type='text', name='prefix', maxlength='5', value=savedGuild.Prefix, size='2')
+        td(valign='bottom')
+          button.btn.btn-success.ms-2 #[i.fas.fa-check]
+  form(action='/servers/' + guild.id + '/general-message?_method=PUT', method='POST').pt-3
+    table.module-table
+      tr
+        td.pe-3(valign='top')
+          label.mb-1 Choose channel of the guild
+          select.form-control(name='textChannels', multiple)
+            each channel of Array.from(guild.channels.cache.filter(c => c.type === 'GUILD_TEXT').values())
+              option(value=channel.id) ##{channel.name}
+        td(valign='top').ms-3
+          label.mb-1 Write message you want to deliver
+          textarea.form-control(name='messageTextarea', placeholder='Enter no more than 2000 symbols', style='height: 100px; max-width: 400px')
+  
+        td(valign='middle')
+          button.btn.btn-success.ms-2 #[i.fas.fa-check]

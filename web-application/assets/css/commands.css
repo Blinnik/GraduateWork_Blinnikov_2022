@@ -1,0 +1,32 @@
+#search {
+    max-width: 300px;
+}
+
+#search + button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+li {
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid lightgray !important;
+    border-radius: 5px;
+}
+
+.commands li {
+    border-radius: 5px;
+    border: 1px solid lightgray !important;
+}
+
+
+.icon {
+    width: 30px;
+}

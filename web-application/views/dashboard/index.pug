@@ -1,0 +1,22 @@
+doctype html
+html
+    head 
+        include ../includes/header.pug
+
+        script(src='/js/sidebar.js', type='text/javascript', defer)
+        link(rel='stylesheet', type='text/css', href='/css/index.css')
+        link(rel='stylesheet', type='text/css', href='/css/sidebar.css')
+    body.bg-light
+        include ../includes/sidebar.pug
+
+        #sidebarExtension.sidebarExShadow
+            header.text-center.pt-4
+                .large-icon.bg-white.round
+                    img.round(src=user.avatarUrl(128), alt=user.username)
+                h4.pt-2 #{user.username}
+                    span.text-muted #{'#' + user.discriminator.toString().padStart(4, '0')}
+
+        include ../includes/navbar.pug
+        .container.p-5.mb-4.text-center
+            h1.display-5.fw-bold Dashboard
+            p.lead Manage your server's SovietChick with the dashboard

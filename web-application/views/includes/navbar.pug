@@ -1,0 +1,27 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    a.navbar-brand(href='/').ps-3 SovietChick
+    button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation').me-3
+      span.navbar-toggler-icon
+    #navbar.collapse.navbar-collapse
+        .navbar-nav.ms-3.align-middle 
+            a.nav-link(href='/commands')
+                i.fas.fa-code
+                span.ps-2 Commands
+        .navbar-nav.ms-auto.pe-3
+            if user
+                .align-middle.bg-transparent.ms-3
+                    .dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                        img.user-avatar.round(src=user.avatarUrl(32))
+                        span.user-name.pl-2.ms-2.align-middle #{user.username}
+                        span.fas.fa-angle-down.text-white.align-middle.ms-2
+                    .dropdown-menu.dropdown-menu-end
+                        a.dropdown-item(type='button', href='/dashboard') Dashboard
+                        hr.dropdown-divider
+                        a.dropdown-item(type='button', href='/logout')
+                            span Logout
+                            span.fas.fa-right-from-bracket.align-middle.ms-2
+
+            else
+                a.nav-link(href='/login').ms-3
+                    i.fas.fa-right-to-bracket.me-2
+                    span.pl-1 Login

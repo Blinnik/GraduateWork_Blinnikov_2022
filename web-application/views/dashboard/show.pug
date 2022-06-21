@@ -1,0 +1,31 @@
+doctype html
+html
+    head 
+        include ../includes/header.pug
+
+        script(src='/js/sidebar.js', type='text/javascript', defer)
+        script(src='/js/guild.js', defer)
+        link(rel='stylesheet', type='text/css', href='/css/index.css')
+        link(rel='stylesheet', type='text/css', href='/css/sidebar.css')
+    body.bg-light
+        include ../includes/sidebar.pug
+
+        #sidebarExtension.sidebarExShadow 
+            header.text-center.pt-4
+                .large-icon.bg-white.round
+                    if guild.icon    
+                        img.icon.round.large-icon(alt=guild.name, src=guild.iconURL({ dynamic: true, size: 128 }))
+                    else
+                        .round.icon-abbr.large-icon
+                            p.round.abbr(style='font-size:10pt') #{guild.nameAcronym}
+                h4#overview.pt-2 #{guild.name}
+            .tabs.navbar-nav
+                .category Modules
+                a#general.cursor-pointer #[i.fas.fa-star.text-muted.pe-1] General
+                a#notifications.cursor-pointer #[i.fas.fa-bell.text-muted.pe-2] Notifications NA
+
+        include ../includes/navbar.pug
+        
+        include modules/overview
+        include modules/general
+        include modules/notifications

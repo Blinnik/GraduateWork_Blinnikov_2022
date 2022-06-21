@@ -1,0 +1,11 @@
+doctype html
+html
+    head 
+        include ../includes/header.pug
+        link(rel='stylesheet', type='text/css', href='/css/index.css')
+    body.bg-light
+        include ../includes/navbar.pug
+        .jumbotron.p-5.mb-4.rounded-3.text-center
+            h1.display-5.fw-bold 401
+            p.lead.fs-3 You are not authorized!
+            a.btn.btn-dark(href='/') Return home

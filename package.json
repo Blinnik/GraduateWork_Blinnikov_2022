@@ -1,0 +1,31 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladimir Blinnikov",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/voice": "^0.9.0",
+    "body-parser": "^1.20.0",
+    "cookies": "^0.8.0",
+    "disco-oauth": "^5.1.1",
+    "discord-player": "^5.2.2",
+    "discord.js": "^13.6.0",
+    "emoji-regex": "^10.1.0",
+    "express": "^4.18.1",
+    "ffmpeg-static": "^5.0.0",
+    "fs": "*",
+    "jquery": "^3.6.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.1",
+    "pug": "^3.0.2",
+    "sodium-native": "^3.3.0",
+    "yt-search": "^2.10.3"
+  }
+}

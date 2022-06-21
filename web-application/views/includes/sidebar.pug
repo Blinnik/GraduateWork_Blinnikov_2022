@@ -1,0 +1,19 @@
+#sidebar.float-start.shadow
+    a(href='/dashboard')
+        div.round(data-bs-toggle='tooltip', data-bs-placement='right', title='Main page')
+            img.icon.round.medium-icon(alt=user.username, src=user.avatarUrl(64))
+    hr.text-secondary(style='size=10px')
+    each guild in guilds
+        a(href='/servers/' + guild.id) 
+            if guild.icon
+                div.round(data-bs-toggle='tooltip', data-bs-placement='right', title=guild.name)
+                    img.icon.round.medium-icon(alt=guild.name, src=guild.iconURL({ dynamic: true, size: 64 }))
+            else
+                .icon.round.icon-abbr.my-2(data-bs-toggle='tooltip', data-bs-placement='right', title=guild.name)
+                    p.round.abbr(style='font-size:8pt') #{guild.nameAcronym}
+    a(href='/invite-dashboard')
+        .icon-plus.round.icon-abbr(data-bs-toggle='tooltip', data-bs-placement='right', title='Add server')
+            p.round.abbr.text-success.text-center
+                i(style='font-size:14pt').fas.fa-plus
+    .hamburger
+        i.fas.fa-bars

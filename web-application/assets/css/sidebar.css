@@ -1,0 +1,161 @@
+
+a {
+    text-decoration: none;
+}
+
+.icon, .icon-plus {
+    display: table;
+    table-layout: fixed;
+    height: 52px;
+    width: 52px;
+}
+
+.icon, .icon-plus, .icon-plus p, .icon img {
+    transition: border-radius .3s linear;
+}
+
+.icon:hover {
+    border-radius: 35%!important;
+}
+
+.icon-plus:hover, .icon-plus p:hover {
+    border-radius: 35%!important;
+    background-color: #3BA55D;
+    color: white!important;
+}
+
+.icon-abbr {
+    background-color: #373B40;  
+}
+
+.abbr {
+    overflow: hidden;
+    text-overflow: clip;
+    color: #D9D9D9;
+    display: table-cell;
+    text-align: center!important;
+    vertical-align: middle!important;
+}
+
+.medium-icon {
+    height: 52px!important;
+    width: 52px!important;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: xx-large;
+    bottom: 0;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.large-icon{
+    display: table!important;
+    table-layout: fixed!important;
+}
+.sidebarExShadow{
+    box-shadow: 10px 0px 8px -8px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+    position: static;
+    height: 100vh;
+    padding: 10px;
+    /*background-color: #202225;*/
+}
+
+#sidebar,
+#sidebarExtension {
+    float: left;
+    
+}
+
+#sidebarExtension {
+   /*background-color: #2F3136;*/
+   height: 100vh;
+   width: 200px;
+   transition: .3s;
+   opacity: 1;
+}
+
+#sidebarExtension h4 {
+    cursor: pointer;
+}
+
+#sidebarExtension .large-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+ #sidebarExtension .large-icon,
+ #sidebarExtension img {
+    font-size: xx-large; /* не эффективно */
+    width: 96px!important;
+    height: 96px!important;
+ }
+ 
+ #sidebarExtension.closed {
+    width: 0;
+    padding: 0px 0;
+    opacity: 0;
+    transform:translate(-9999px);
+ }
+
+ 
+ /* tabs */
+.tabs a {
+    margin: 2px 10px;
+    padding: 5px;
+    padding-left: 10px !important;
+    border-radius: 5px;
+  
+    text-decoration: none;
+    color: black;
+  }
+  .tabs a:hover {
+    background-color: white;
+  }
+  
+  .tabs .category {
+    padding: 24px 0 4px 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  
+    color: gray;
+    cursor: pointer;
+  
+    transition: color .3s ease-in-out;
+  }
+  .tabs .category:hover {
+    color: black;
+  } 
+
+  @media only screen and (max-width : 570px) {
+    #sidebarExtension {
+        width: 150px;
+        height: auto;
+        font-size: small;
+    }
+    #sidebarExtension .large-icon {
+        display: none!important;
+    }
+    #sidebarExtension  i {
+        display: none!important;
+    }
+    #sidebarExtension  h4 {
+        font-size: medium;
+    }
+    #sidebarExtension  header {
+        padding: 0!important;
+    }
+    .sidebarExShadow{
+        box-shadow: 10px 6px 8px -8px rgba(0, 0, 0, 0.1)!important;
+    }
+    .tabs .category {
+        display: none;
+    }
+  }
